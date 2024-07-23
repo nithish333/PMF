@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="portalmultifileuploader" constructor="portalmultifilesuploader" version="0.0.1" display-name-key="portalmultifilesuploader" description-key="portalmultifilesuploader description" control-type="standard" preview-image="img/preview.png">
+   
+
+    <property name="uploaderField" display-name-key="uploaderField" description-key="select this control to bring up a different look and feel of a file uploader UI" of-type="SingleLine.Text" usage="bound" required="true" />
+
+
+    <external-service-usage enabled="false">
+    
+    </external-service-usage>
+    <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+  
+  <resources>
+      <code path="index.ts" order="1" />
+      <css path="css/uploader2.css" order="1" />
+      <resx path="strings/uploader2.1033.resx" version="1.0.0" />
+    </resources>
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+   
+  </control>
+</manifest>
